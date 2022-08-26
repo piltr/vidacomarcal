@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vida Comarcal</title>
+    <link href="https: //fonts.googleapis.com/css2? familia = Macondo &family= Oleo+Script+Swash+Caps & display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/afa070df13.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"></li><i class="fas fa-house"></i><a href="index.html">Inicio</a>
+                <li class="nav__li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre nosotros</a></li>
+                <li class="nav__li"><i class="fa-solid fa-trees"></i><a href="nogales.html">Nogales</a></li>
+                <li class="nav__li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">Paw paw baby</a></li>
+            </ul>
+            <ul class="nav__responsive-ul">
+                <div class="nav__responsive-button-container">
+                    <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav__responsive-li"><i class="fa-solid fa-trees"></i><a href="nogales.html">Nogales</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">paw paw baby</a></li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="inicio">
+        <h1>NOGALES VIDAL</h1>
+        <h2>Los mejores nogales de la comarca</h2>
+        <a href="nogales.html"><img src="imagenes\frutales.jpg" alt=""></a>
+        <h3>Inserte aqui ubicacion de nogales</h3>
+    </div>
+
+
+
+    <a href="index.html">Culo</a><br><br>
+    <input type="button" value="Metete un nogal">
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBYvPJgdTqD0i6oZ8UjIGtfYrN4e9k_mLI",
+            authDomain: "vidacomarcal.firebaseapp.com",
+            projectId: "vidacomarcal",
+            storageBucket: "vidacomarcal.appspot.com",
+            messagingSenderId: "501257183489",
+            appId: "1:501257183489:web:f835ac227eb66c1ef2fb00"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="js/vidacomarcal.js"></script>
+</body>
+
+</html>
