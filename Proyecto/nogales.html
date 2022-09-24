@@ -1,37 +1,51 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0,
+    width=device-width" />
+
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+    <script type="text/javascript" src="js/vidacomarcal.js"></script>
     <title>Vida Comarcal</title>
     <link href="https: //fonts.googleapis.com/css2? familia = Macondo &family= Oleo+Script+Swash+Caps & display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/afa070df13.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
-            <li class="nav__li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre nosotros</a></li>
-            <li class="nav__li"></li><i class="fa-solid fa-trees"></i></i><a href="nogales.html">Nogales</a>
-            <li class="nav__li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">Paw paw baby</a></li>
-        </ul>
-        <ul class="nav__responsive-ul">
-            <div class="nav__responsive-button-container">
-                <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
-            </div>
-            <div class="nav__li-container">
-                <li class="nav__responsive-li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
-                <li class="nav__responsive-li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li class="nav__responsive-li"><i class="fa-solid fa-trees"></i><a href="nogales.html">Nogales</a></li>
-                <li class="nav__responsive-li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">paw paw baby</a></li>
-            </div>
 
-        </ul>
-    </nav>
-</header>
-<div>
-    <p>Aca van esos nogales culiaos</p>
-    <a href=""><img class="size-100" src="imagenes\caminodelosnogales.jpg" alt=""></a><br>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
+                <li class="nav__li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre nosotros</a></li>
+                <li class="nav__li"></li><i class="fa-solid fa-trees"></i></i><a href="nogales.html">Nogales</a>
+                <li class="nav__li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">Paw paw baby</a></li>
+            </ul>
+            <ul class="nav__responsive-ul">
+                <div class="nav__responsive-button-container">
+                    <div class="nav__responsive-button"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"><i class="fas fa-house"></i><a href="index.html">Inicio</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav__responsive-li"><i class="fa-solid fa-trees"></i><a href="nogales.html">Nogales</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-handshake-angle"></i><a href="pawpaw.html">paw paw baby</a></li>
+                </div>
 
-</div>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <p>Aca van esos nogales culiaos</p>
+        <div style="width: 640px; height: 480px" id="mapContainer"></div>
+        <a href=""><img class="size-100" src="imagenes\caminodelosnogales.jpg" alt=""></a><br>
+
+    </div>
+</body>
